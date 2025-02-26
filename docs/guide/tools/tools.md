@@ -344,3 +344,40 @@ arabicToRoman(num)
  */
 getRandomColor()
 ```
+
+## base64转blob 0.2.9
+
+```js
+/**
+ * @description base64转blob
+ * @param {String} base64 base64字符串
+ * @returns {Blob} blob
+ */
+dataUrlToBlob(base64)
+```
+
+## blobToBase64  0.2.9
+
+```js
+/**
+ * @description blob转base64
+ * @param {Blob} blob blob
+ * @returns {Promise<string>} base64
+ */
+blobToBase64(blob)
+```
+
+## 计算base64图片大小  0.2.9
+
+```js
+/**
+ * @description 计算base64图片大小
+ * @param {string} base64Str base64字符串
+ * @returns {Object} 包含不同单位的大小 { bytes: number, kb: number, mb: number }
+ * @throws {Error} 当输入的base64字符串格式不正确时抛出错误
+ * @example
+ * calculateImageSize('data:image/jpeg;base64,/9j/4AAQSkZJRg...')
+ * // => { bytes: 1024, kb: 1, mb: 0.001 }
+ */
+calculateImageSize(base64Str);
+```
