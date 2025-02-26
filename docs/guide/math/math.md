@@ -63,3 +63,15 @@ symmetricDifference(arr1, arr2);
  */
 difference(arr1, arr2);
 ```
+
+## 获取差集 0.2.9
+
+```js
+/**
+ * @param {Array} arr1
+ * @param {Array} arr2
+ * @description 获取差集
+ * @example getLeftDifference([1,2,3], [2,3]) => [1]
+ */
+getLeftDifference(arr,arr2,key);
+```

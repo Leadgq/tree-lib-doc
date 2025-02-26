@@ -323,3 +323,24 @@ jointUrl(url, params)
  */
 onlyLastHttpValue(fn);
 ```
+
+## 阿拉伯数字转罗马数字 0.2.9
+
+```js
+/**
+ * @description 阿拉伯数字转罗马数字
+ * @param {Number} num 阿拉伯数字
+ * @returns {String} 罗马数字
+ */
+arabicToRoman(num)
+```
+
+## 获取随机颜色 0.2.9
+
+```js
+/**
+ * @description 获取随机颜色
+ * @returns {String} 随机颜色
+ */
+getRandomColor()
+```
