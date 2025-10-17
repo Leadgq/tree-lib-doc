@@ -381,3 +381,51 @@ blobToBase64(blob)
  */
 calculateImageSize(base64Str);
 ```
+
+## 将时间转换为分钟 0.3.0
+
+```js
+
+/**
+ * @description 将时间转换为分钟
+ * @param {String} time 时间字符串，格式为HH:mm:ss
+ * @return {Number} 转换后的分钟数
+ * @example
+ * toMinutes('01:30:00') ==> 90
+ * toMinutes('00:45:00') ==> 45
+ */
+toMinutes(time)
+```
+
+
+## 是否存在交集 0.3.0
+```js
+/**
+ * @description 是否存在交集
+ * @param {Array} intervals 时间区间数组，每个区间是一个对象，包含startTime和endTime属性
+ * @param {Boolean} isNotBoundary 是否不包含边界
+ * @return {Boolean} 是否存在交集
+ * @example
+  const intervals = [{ startTime: '08:00:00', endTime: '12:00:00' }, { startTime: '14:00:00', endTime: '18:00:00' }];
+  addNonOverlappingTimeSlot(intervals); // false
+  const intervals2 = [{ startTime: '08:00:00', endTime: '12:00:00' }, { startTime: '12:00:00', endTime: '18:00:00' }];
+  addNonOverlappingTimeSlot(intervals); // false
+  addNonOverlappingTimeSlot(intervals,true); // true
+ */
+addNonOverlappingTimeSlot(intervals, isNotBoundary = false)
+```
+
+
+## 是否为图片文件 0.3.0
+
+```js
+/**
+ * @description 是否为图片文件
+ * @param {String} filename 文件名
+ * @return {Boolean} 是否为图片文件
+ * @example
+ * isImageByExtension('image.jpg') ==> true
+ * isImageByExtension('document.pdf') ==> false
+ */
+isImageByExtension(filename) 
+```
